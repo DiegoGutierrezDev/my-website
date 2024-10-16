@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<template lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
@@ -7,7 +6,9 @@
     <title>Diego Gutiérrez</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>Cambiando el archivo de HTML a Vue</h1>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
-</html>
+</template>
