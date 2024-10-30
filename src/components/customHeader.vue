@@ -27,15 +27,7 @@
   <script>
   export default {
     data() {
-      return {
-        who: "World",
-      };
+      return {};
     },
   };
   </script>
-  
-  <style scoped>
-  span {
-    color: blue;
-  }
-  </style>
