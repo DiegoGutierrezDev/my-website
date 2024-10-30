@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@config "../../tailwind.config.js";
-
 :root {
   --main-bg: #0A435D;
 }
@@ -32,24 +30,6 @@ img {
   max-height: 100%;
 }
 
-a {
-  font-family: var(--proza);
-  font-size:large;
-  color:var(--contrast);
-  text-decoration:none;
-  transition-timing-function: ease-out;
-  transition-duration: 0.2s;
-
-}
-
-a:hover {
-  color: var(--light-green);;
-  transition-duration: 0.5s;
-  transform: translateY(-3px);
-  transition: 0.2s;
-
-}
-
 nav {
   background-color: var(--main);
   border-radius: 20px;
@@ -60,8 +40,16 @@ nav {
 }
 
 h1{
-  color: var(--contrast);
-  font-family: var(--montserrat);
+  color: theme('colors.orange');
+  font-family: theme('fontFamily.montserrat');
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  color: theme('colors.green-lime');
+  font-family: theme('fontFamily.della');
+  font-size: 1.50em;
 }
 
 b{
@@ -77,39 +65,20 @@ b{
   text-align: center;
 }
 
-.name {
-  font-family: var(--montserrat);
-  color: var(--contrast);
-  font-size: 2em;
-}
-
-.developer {
-  color: var(--light-green);
-  font-family: var(--della);
-  font-size: 1.50em;
-  display: block;
-}
-
 /* Redes */
-
-.social {
-  display: flex; 
-  justify-content: flex-end;
-  margin: 0 2em 0.5em 0;
-}
-
-.social-img
-{
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0.5em 0.5em 0;
-  width: 2.4%;
+.img-links {
+  width: 2.5rem;
   border-radius: 100%;
+  margin-left: 0.5rem;
+  transition: 0.4s;
+
 }
 
-.social-img:hover{
-  background-color: var(--light-green);
-  transition-duration: 0.6s;
+.img-links:hover {
+  background-color: theme('colors.green-lime');
+  transform: translateY(-4px);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Introducción */
