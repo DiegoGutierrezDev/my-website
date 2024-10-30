@@ -3,7 +3,6 @@
     <customHeader></customHeader>
   </header>
   <NavigationBar></NavigationBar>
-
   <RouterView />
 </template>
 
