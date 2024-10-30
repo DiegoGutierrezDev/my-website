@@ -130,7 +130,7 @@ b{
 }
 
 .description::before {
-  background-image: url(./wave_background.jpg);
+  background-image: url(./img/wave_background.jpg);
   content: "";
   background-size: cover;
   position: absolute;
