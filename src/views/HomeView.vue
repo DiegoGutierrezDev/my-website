@@ -11,7 +11,7 @@
                         Bienvenido! <br>Quieres saber más? Haz click sobre la foto!
                     </span>
 
-                <img src="/src/assets/img/CV.png" alt="fotoPersonal" class="avatar max-md:hidden">
+                <img src="/src/assets/img/CV.png" alt="fotoPersonal" class="avatar max-lg:hidden">
             </div>
     </div>
 </template>

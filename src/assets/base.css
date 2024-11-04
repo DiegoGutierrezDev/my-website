@@ -21,13 +21,13 @@ img {
 }
 
 a {
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 a:hover {
   color: theme('colors.green-lime');
   transform: translateY(-4px);
-  transition: 0.4s;
+  transition: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -70,7 +70,7 @@ b{
   width: 2.5rem;
   border-radius: 100%;
   margin-right: 0.5rem;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .img-links:hover {
