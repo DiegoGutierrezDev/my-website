@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@config "../../tailwind.config.js";
-
 :root {
   --main-bg: #0A435D;
 }
@@ -11,20 +9,10 @@
 
 html {
   background-color: var(--main-bg);
-  margin: 0 2em;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 2em 2.5em;
 }
 
 img {
@@ -33,21 +21,19 @@ img {
 }
 
 a {
-  font-family: var(--proza);
-  font-size:large;
-  color:var(--contrast);
-  text-decoration:none;
-  transition-timing-function: ease-out;
-  transition-duration: 0.2s;
-
+  transition: 0.2s;
 }
 
 a:hover {
-  color: var(--light-green);;
-  transition-duration: 0.5s;
-  transform: translateY(-3px);
+  color: theme('colors.green-lime');
+  transform: translateY(-4px);
   transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
 
+span {
+  font-family: theme('fontFamily.della');
+  color: white;
 }
 
 nav {
@@ -60,8 +46,17 @@ nav {
 }
 
 h1{
-  color: var(--contrast);
-  font-family: var(--montserrat);
+  color: theme('colors.orange');
+  font-family: theme('fontFamily.montserrat');
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  color: theme('colors.green-lime');
+  font-family: theme('fontFamily.della');
+  font-size: 1.50em;
+  font-weight: 400;
 }
 
 b{
@@ -70,46 +65,16 @@ b{
 
 /*Clases*/
 
-/* Nombre */
-.webdev {
-  width: 20%;
-  margin: 1.5em 0 0 1em;
-  text-align: center;
-}
-
-.name {
-  font-family: var(--montserrat);
-  color: var(--contrast);
-  font-size: 2em;
-}
-
-.developer {
-  color: var(--light-green);
-  font-family: var(--della);
-  font-size: 1.50em;
-  display: block;
-}
-
 /* Redes */
-
-.social {
-  display: flex; 
-  justify-content: flex-end;
-  margin: 0 2em 0.5em 0;
-}
-
-.social-img
-{
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0.5em 0.5em 0;
-  width: 2.4%;
+.img-links {
+  width: 2.5rem;
   border-radius: 100%;
+  margin-right: 0.5rem;
+  transition: 0.2s;
 }
 
-.social-img:hover{
-  background-color: var(--light-green);
-  transition-duration: 0.6s;
+.img-links:hover {
+  background-color: theme('colors.green-lime');
 }
 
 /* Introducción */
@@ -124,13 +89,14 @@ b{
   display: flex;
   justify-content:center;
   align-items: center;
-  margin-top: 2em;
-  height: 50vh;
+  margin-top: 4em;
+  height: fit-content;
+  padding: 2em;
   position: relative;
 }
 
 .description::before {
-  background-image: url(./wave_background.jpg);
+  background-image: url(./img/wave_background.jpg);
   content: "";
   background-size: cover;
   position: absolute;
@@ -148,13 +114,6 @@ b{
   position: relative;
   justify-content:center;
   align-items: center;
-}
-
-.description > div > span {
-  color: var(--white);
-  font-size: medium;
-  font-family: var(--della);
-  height: 40%;
 }
 
 .main{
