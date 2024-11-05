@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between">
      <div class="text-center">
-        <RouterLink href="/">
+        <RouterLink to="/">
             <h1>Diego Gutiérrez</h1>
                 <h2>Web Developer</h2>
         </RouterLink>
@@ -12,22 +12,12 @@
         <a href="mailto:gutierrezmaria.diego@gmail.com" class="img-links">
             <img src="/src/assets/img/email.png" alt="email"></a>
 
-        <RouterLink href="https://github.com/DiegoGutierrezDev" class="img-links" target="_blank">
-            <img src="/src/assets/img/github.png" alt="github"></RouterLink>
+        <a href="https://github.com/DiegoGutierrezDev" class="img-links" target="_blank">
+            <img src="/src/assets/img/github.png" alt="github"></a>
 
-        <RouterLink href="https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/" class="img-links" target="_blank">
-            <img src="/src/assets/img/linkedin.png" alt="linkedin"></RouterLink>
+        <a href="https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/" class="img-links" target="_blank">
+            <img src="/src/assets/img/linkedin.png" alt="linkedin"></a>
     </div>
   </div>
    
 </template>
-
-
-  
-  <script>
-  export default {
-    data() {
-      return {};
-    },
-  };
-  </script>
