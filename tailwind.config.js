@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+// const {fontFamily} = require("tailwindcss/defaultTheme");
+
 export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: [],
