@@ -6,6 +6,18 @@
   font-family: "Montserrat";
   src: url("../fonts/Montserrat.ttf");
 }
+@font-face {
+  font-family: "Proza";
+  src: url("../fonts/ProzaLibre-Regular.ttf");
+}
+@font-face {
+  font-family: "Della";
+  src: url("../fonts/DellaRespira-Regular.ttf");
+}
+@font-face {
+  font-family: "Hind";
+  src: url("../fonts/HindMysuru-Regular.ttf");
+}
 
 :root {
   --main-bg: #0A435D;
