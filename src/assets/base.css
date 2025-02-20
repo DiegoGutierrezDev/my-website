@@ -140,8 +140,3 @@ b{
   text-align: center;
   height: 80vh;
 }
-
-.blue-background {
-  margin-top: 2em;
-  background-color: theme("colors.main");
-}
