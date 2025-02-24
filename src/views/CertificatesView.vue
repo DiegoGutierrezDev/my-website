@@ -7,11 +7,12 @@
           class="absolute z-40" 
           style="width: 335px; height: 253px;"
           >
-        <VuePdfEmbed 
-          :source="title.src" 
-          class="mt-5 ml-1" 
-          style="width: 328px;">
-        </VuePdfEmbed>
+          <img 
+          :src="title.src" 
+          alt="" 
+          class="pt-5 pl-2 pr-0.5 items-center flex justify-center" 
+          style="width: 330px; height: 250px;"
+          >
       </div>
     </div>
   </div>
@@ -19,22 +20,21 @@
 
 <script setup>
 import { ref } from 'vue'
-import VuePdfEmbed from 'vue-pdf-embed';
 
 // Data
 const certificates = ref([
-  {title: 'Javascript', year: '2018', src: "src/assets/titles/AppsMoviles.pdf"},
-  {title: 'Javascript', year: '2019', src: "src/assets/titles/BasicsAndroid.pdf"},
-  {title: 'Javascript', year: '2012', src: "src/assets/titles/HowtoCode.pdf"},
-  {title: 'Javascript', year: '2015', src: "src/assets/titles/HTMLCss.pdf"},
-  {title: 'Javascript', year: '2018', src: "src/assets/titles/WebDev1.pdf"},
-  {title: 'Javascript', year: '2019', src: "src/assets/titles/JavaScriptAsincrono.pdf"},
-  {title: 'Javascript', year: '2012', src: "src/assets/titles/JavaScript.pdf"},
-  {title: 'Javascript', year: '2015', src: "src/assets/titles/Laravel_MasterMind.pdf"},
-  {title: 'Javascript', year: '2018', src: "src/assets/titles/Python MasterMind.pdf"},
-  {title: 'Javascript', year: '2019', src: "src/assets/titles/Symfony-6-Basic.pdf"},
-  {title: 'Javascript', year: '2012', src: "src/assets/titles/Vue&Laravel MasterMind.pdf"},
-  {title: 'Javascript', year: '2015', src: "src/assets/titles/Vue.jsMasterMind.pdf"},
+  {title: 'Desarrollo de Apps Moviles', year: '2018', src: "src/assets/titles/AppsMoviles.png"},
+  {title: 'Básicos de Android', year: '2019', src: "src/assets/titles/BasicsAndroid.png"},
+  {title: 'How To Code', year: '2012', src: "src/assets/titles/HowtoCode.png"},
+  {title: 'HTML y CSS', year: '2015', src: "src/assets/titles/HTMLCss.png"},
+  {title: 'Desarrollo Web I', year: '2018', src: "src/assets/titles/WebDev1.png"},
+  {title: 'Javascript Asíncrono', year: '2019', src: "src/assets/titles/JavaScriptAsincrono.png"},
+  {title: 'Javascript', year: '2012', src: "src/assets/titles/JavaScript.png"},
+  {title: 'Laravel desde cero', year: '2015', src: "src/assets/titles/Laravel_MasterMind.png"},
+  {title: 'Python básico', year: '2018', src: "src/assets/titles/Python MasterMind.png"},
+  {title: 'Symfony 6 basic', year: '2019', src: "src/assets/titles/Symfony-6-Basic.png"},
+  {title: 'Desarrollo con Vue.js y Laravel', year: '2012', src: "src/assets/titles/Vue&Laravel MasterMind.png"},
+  {title: 'Desarrollo con Vue.js', year: '2015', src: "src/assets/titles/Vue.jsMasterMind.png"},
 ])
 
 </script>
