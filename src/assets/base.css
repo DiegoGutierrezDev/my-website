@@ -53,6 +53,10 @@ span {
   color: white;
 }
 
+strong {
+  color: theme('colors.orange');
+}
+
 nav {
   background-color: var(--main);
   border-radius: 20px;

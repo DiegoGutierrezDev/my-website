@@ -1,6 +1,6 @@
 <template>
   <div class="blue-background grid grid-cols-4 justify-between justify-items-center">
-    <div v-for="title in certificates" class="flex items-center justify-center rounded-lg mb-8 pa-4">
+    <div v-for="title in certificates" class="rounded-lg mb-8 pa-4">
       <div class="">
         <h1>
           {{ title.year }}
@@ -13,11 +13,11 @@
           alt="" 
           class="absolute z-40 w-[335px] h-[260px]" 
           >
-        <div class="rounded-full">
+        <div class="rounded-lg pt-[1.33rem]">
           <img 
             :src="title.src" 
             alt="" 
-            class="pt-[1.37rem] pl-2 pr-0.5 w-[330px] h-[250px] rounded-lg" 
+            class="pl-1 pr-0.5 w-[335px] h-[236px] rounded-3xl" 
             >
         </div>
       </div>
