@@ -1,14 +1,6 @@
 <template>
-    <div class="">
-        <button class="bg-orange rounded-full w-36 h-8 flex items-center justify-center">{{ text }} 
-            <slot name="icon"></slot>
+        <button class="bg-orange rounded-full w-auto px-6 py-4 h-8 flex items-center justify-center">
+            <slot name="content"></slot>
         </button>
-    </div>
-
 </template>
-
-<script setup>
-//Props
-const props = defineProps(['text'])
-</script>
   

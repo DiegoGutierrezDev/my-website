@@ -39,15 +39,9 @@ a {
 }
 
 a:hover {
-  color: theme('colors.green-lime');
   transform: translateY(-4px);
   transition: 0.2s;
   transition-timing-function: ease-in-out;
-}
-
-span {
-  font-family: theme('fontFamily.della');
-  color: white;
 }
 
 nav {
@@ -82,18 +76,6 @@ b{
 }
 
 /*Clases*/
-
-/* Redes */
-.img-links {
-  width: 2.5rem;
-  border-radius: 100%;
-  margin-right: 0.5rem;
-  transition: 0.2s;
-}
-
-.img-links:hover {
-  background-color: theme('colors.green-lime');
-}
 
 /* Introducción */
 .avatar {
