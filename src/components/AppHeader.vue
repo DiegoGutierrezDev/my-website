@@ -11,9 +11,9 @@ import AppButton from './AppButton.vue';
                     <h1 class="mr-2"> Diego Gutiérrez </h1>
                     <span class="text-main-blue text-2xl">&gt;</span>
                 </RouterLink>
-                </div>
+            </div>
 
-            <div class="w-96 flex justify-around items-center font-montserrat font-semibold text-main-blue">
+            <div class="w-96 flex justify-around items-center font-hind text-white">
                 <router-link to="/about">Mi historia</router-link>
                 <router-link to="#">Mis Skills</router-link>
             </div>
