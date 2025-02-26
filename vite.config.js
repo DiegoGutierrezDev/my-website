@@ -17,7 +17,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/my-website/',
+  base: 'diegogutierrezdev.netlify.app',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
