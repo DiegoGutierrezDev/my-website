@@ -5,6 +5,15 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: '0.0.0.0',
+    hmr: {
+      host: 'localhost',
+    },
+  },
+  build: {
+    sourcemap: true,
+  },
   plugins: [
     vue(),
   ],
