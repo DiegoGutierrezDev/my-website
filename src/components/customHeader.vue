@@ -3,21 +3,21 @@ import CustomButton from './customButton.vue';
 </script>
 
 <template>
-  <div class="bg-main flex justify-between items-center px-5 py-2">
+  <div class="bg-dark flex justify-around items-center px-5 py-4">
      <div class="text-center">
         <RouterLink to="/" class="flex items-center" id="avoidHover">
-            <img src="../assets/img/CV.png" alt="" class="rounded-full w-16 mr-5">
-            <h1>Diego Gutiérrez</h1>
+            <span class="text-main-blue text-2xl mr-3">&lt;/</span>
+            <h1 class="mr-2"> Diego Gutiérrez </h1>
+            <span class="text-main-blue text-2xl">&gt;</span>
         </RouterLink>
         </div>
 
-    <div class="w-96 flex justify-around items-center font-montserrat font-semibold text-orange">
-        <router-link to="/">Inicio</router-link>
+    <div class="w-96 flex justify-around items-center font-montserrat font-semibold text-main-blue">
         <router-link to="/about">Mi historia</router-link>
         <router-link to="#">Mis Skills</router-link>
     </div>
 
-    <div class="flex ">
+    <!-- <div class="flex ">
 
         <a href="/src/assets/documents/CV.pdf" download="cv-diego-gutierrez-2025.pdf" class="mr-2">
             <CustomButton text="Descargar CV">
@@ -70,7 +70,7 @@ import CustomButton from './customButton.vue';
             />
             </svg>
         </a>
-    </div>
+    </div> -->
   </div>
    
 </template>
