@@ -3,19 +3,20 @@ import AppButton from './AppButton.vue';
 </script>
 
 <template>
-  <div class="bg-dark flex justify-around items-center px-5 py-4">
-     <div class="text-center">
-        <RouterLink to="/" class="flex items-center" id="avoidHover">
-            <span class="text-main-blue text-2xl mr-3">&lt;/</span>
-            <h1 class="mr-2"> Diego Gutiérrez </h1>
-            <span class="text-main-blue text-2xl">&gt;</span>
-        </RouterLink>
-        </div>
+    <header>
+        <div class="bg-dark flex justify-around items-center px-5 py-4">
+            <div class="text-center">
+                <RouterLink to="/" class="flex items-center" id="avoidHover">
+                    <span class="text-main-blue text-2xl mr-3">&lt;/</span>
+                    <h1 class="mr-2"> Diego Gutiérrez </h1>
+                    <span class="text-main-blue text-2xl">&gt;</span>
+                </RouterLink>
+                </div>
 
-    <div class="w-96 flex justify-around items-center font-montserrat font-semibold text-main-blue">
-        <router-link to="/about">Mi historia</router-link>
-        <router-link to="#">Mis Skills</router-link>
-    </div>
+            <div class="w-96 flex justify-around items-center font-montserrat font-semibold text-main-blue">
+                <router-link to="/about">Mi historia</router-link>
+                <router-link to="#">Mis Skills</router-link>
+            </div>
 
     <!-- <div class="flex ">
 
@@ -71,6 +72,6 @@ import AppButton from './AppButton.vue';
             </svg>
         </a>
     </div> -->
-  </div>
-   
+        </div>
+    </header>
 </template>
