@@ -4,7 +4,7 @@ import AppButton from './AppButton.vue';
 
 <template>
     <header>
-        <div class="bg-dark flex justify-around items-center px-5 py-4">
+        <div class="bg-dark flex justify-around items-center pt-10 pb-14">
             <div class="text-center">
                 <RouterLink to="/" class="flex items-center" id="avoidHover">
                     <span class="text-main-blue text-2xl mr-3">&lt;/</span>

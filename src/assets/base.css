@@ -62,7 +62,7 @@ h1{
 }
 
 h2 {
-  /* color: theme('colors.green-lime'); */
+  color: theme('colors.main-blue');
   font-family: theme('fontFamily.della');
   font-size: 1.50em;
   font-weight: 400;
