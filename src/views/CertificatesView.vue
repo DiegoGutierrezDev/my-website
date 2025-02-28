@@ -1,6 +1,6 @@
 <template>
   <div class="blue-background grid grid-cols-4 justify-between justify-items-center">
-    <div v-for="title in certificates" class="rounded-lg mb-8 pa-4">
+    <div v-for="title in certificates" :key="title.year" class="rounded-lg mb-8 pa-4">
       <div class="">
         <h1>
           {{ title.year }}

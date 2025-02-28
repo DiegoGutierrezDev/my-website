@@ -1,7 +1,7 @@
 <template>
-    <div class="description" id="description">
-            <div>
-                <span class="max-md:hidden">
+    <div class="bg-grey-dark-2 py-10">
+        <div class="w-1/2 m-auto flex gap-14">
+            <span class="max-md:hidden text-white font-della">
                     <strong>He descubierto mi verdadera vocación</strong> en el mundo de la programación. Me apasiona <strong>aprender y practicar constantemente</strong>, disfrutando de la sensación de superación y progreso. La lógica detrás de cada desafío y el continuo rompecabezas que es la programación me motivan día a día.
                     <br> <br>
                     <strong>Mi viaje comenzó de manera autodidacta en 2018,</strong>
@@ -14,14 +14,10 @@
                         Bienvenido! <br>Quieres saber más? Haz click sobre la foto!
                     </span>
 
-                <img src="/src/assets/img/CV.png" alt="fotoPersonal" class="avatar max-lg:hidden">
-            </div>
+                <img src="/src/assets/img/CV.png" alt="fotoPersonal" class="avatar max-lg:hidden rounded-full w-96 h-80">
+        </div>
+                
     </div>
-
-    <div class="flex flex-col items-center gap-8 m-4 w-full ">
-      <h1>Sigo desarrollando...</h1>
-      <img src="/monkey-developer.gif" alt="monkeyDeveloping">
-  </div>
 </template>
 
 <script setup>
