@@ -21,7 +21,7 @@
 
 
 html {
-  background-color: theme('colors.dark');
+  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);;
 }
 
 
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: theme('colors.main-blue');
+  color: theme('colors.darker-blue');
   transform: translateY(-4px);
   transition: 0.2s;
   transition-timing-function: ease-in-out;
