@@ -8,12 +8,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // 'main-bg': '#397977',
-        // 'main': '#08354a',
-        // 'secondary-blue': '#00A0F4',
-        // 'light-blue': '#00BDFF',
-        // 'orange': '#EA9A28',
-        // 'green-lime': '#CBF279',
         'main-blue': '#66fcf1',
         'darker-blue': '#397977',
         'dark': '#1b222c',
