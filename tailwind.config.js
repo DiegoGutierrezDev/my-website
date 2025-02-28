@@ -13,8 +13,8 @@ export default {
         'dark': '#1b222c',
         'grey-dark': '#202833',
         'grey-dark-2': '#252e3b',
-        'grey-blue-dark': '#243443',
-        'grey': '#80858b',
+        'grey-blue': '#243443',
+        'white-grey': '#80858b',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],

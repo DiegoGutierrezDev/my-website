@@ -5,7 +5,7 @@ import AppButton from '@/components/AppButton.vue';
 
 <template>
   <main>
-    <div class="bg-dark flex justify-center items-center pt-14 pb-10 px-60">
+    <div class="flex justify-center items-center pt-14 pb-10 px-60">
 
       <div  class="w-1/2">
         <div class="mb-10">
@@ -31,7 +31,7 @@ import AppButton from '@/components/AppButton.vue';
                 </template>
             </AppButton>
         </a>
-        <a href="mailto:gutierrezmaria.diego@gmail.com" class="size-10">
+        <a href="mailto:gutierrezmaria.diego@gmail.com" class="size-7">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -47,7 +47,7 @@ import AppButton from '@/components/AppButton.vue';
             </svg>
         </a>
 
-        <a href="https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/" class="size-10" target="_blank">
+        <a href="https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/" class="size-7" target="_blank">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 18 16"
@@ -59,7 +59,7 @@ import AppButton from '@/components/AppButton.vue';
             </svg>
         </a>
         
-        <a href="https://github.com/DiegoGutierrezDev" target="_blank" class="size-9">
+        <a href="https://github.com/DiegoGutierrezDev" target="_blank" class="size-6">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
