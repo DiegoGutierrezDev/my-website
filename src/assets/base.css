@@ -19,13 +19,9 @@
   src: url("../fonts/HindMysuru-Regular.ttf");
 }
 
-:root {
-  --main-bg: #0A435D;
-}
-
 
 html {
-  background-color: var(--main-bg);
+  background-color: theme('colors.dark');
 }
 
 
@@ -39,15 +35,10 @@ a {
 }
 
 a:hover {
-  color: theme('colors.green-lime');
+  color: theme('colors.main-blue');
   transform: translateY(-4px);
   transition: 0.2s;
   transition-timing-function: ease-in-out;
-}
-
-span {
-  font-family: theme('fontFamily.della');
-  color: white;
 }
 
 nav {
@@ -60,7 +51,7 @@ nav {
 }
 
 h1{
-  color: theme('colors.orange');
+  color: white;
   font-family: theme('fontFamily.montserrat');
   font-size: 1.5em;
   font-weight: 700;
@@ -71,7 +62,7 @@ h1{
 }
 
 h2 {
-  color: theme('colors.green-lime');
+  color: theme('colors.main-blue');
   font-family: theme('fontFamily.della');
   font-size: 1.50em;
   font-weight: 400;
@@ -82,18 +73,6 @@ b{
 }
 
 /*Clases*/
-
-/* Redes */
-.img-links {
-  width: 2.5rem;
-  border-radius: 100%;
-  margin-right: 0.5rem;
-  transition: 0.2s;
-}
-
-.img-links:hover {
-  background-color: theme('colors.green-lime');
-}
 
 /* Introducción */
 .avatar {
