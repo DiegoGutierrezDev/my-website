@@ -45,11 +45,3 @@ const certificates = ref([
 ])
 
 </script>
-
-<style>
-.blue-background {
-  margin-top: 2em;
-  padding: 2em;
-  background-color: theme("colors.main");
-}
-</style>
