@@ -3,7 +3,7 @@ import AppButton from '@/components/AppButton.vue';
 
 const companies = [
   {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025'},
-  {name: 'Evolbe', start: '2023', end: '2024'},
+  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024'},
   {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jun. 2023'},
 ]
 </script>
@@ -91,8 +91,8 @@ const companies = [
       </span>
 
     <div v-for="job in companies" :key="job.name" class="bg-white-grey rounded-2xl w-1/2 p-4 mt-10">
-      <span class="text-main-blue text-xl font-semibold mr-5">{{ job.name }}</span>
-      <div class="inline rounded-full border-2 border-main-blue px-3 py-1 text-white bg-darker-blue text-sm">
+      <span class="text-main-blue text-xl font-semibold mr-3">{{ job.name }}</span>
+      <div class="inline rounded-full border-2 border-main-blue px-3 py-1 text-white bg-darker-blue text-xs">
         {{ job.start + '-' + job.end }}
       </div>
       <img src="../assets/img/evolbe.png" alt="" class="w-20 float-right">
