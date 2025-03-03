@@ -1,11 +1,16 @@
-<script setup lang="ts">
+<script setup>
 import AppButton from '@/components/AppButton.vue';
 
+const companies = [
+  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025'},
+  {name: 'Evolbe', start: '2023', end: '2024'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jun. 2023'},
+]
 </script>
 
 <template>
   <main>
-    <div class="flex justify-center items-center pt-14 pb-10 px-60">
+    <div class="flex justify-center items-center py-24 px-60">
 
       <div  class="w-1/2">
         <div class="mb-10">
@@ -78,15 +83,27 @@ import AppButton from '@/components/AppButton.vue';
       </div>
 
     </div>
-  </main>
-</template>
+  <section class="py-24">
+    <div class="m-auto w-1/2">
+      <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
+      <span class="text-white font-della text-lg">
+      Cuento con 2 años de experiencia laboral, y siempre bajo el mismo stack, en el que me he preocupado de aprender las mejores prácticas, desarrollando en:
+      </span>
 
-<!-- <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style> -->
+    <div v-for="job in companies" :key="job.name" class="bg-white-grey rounded-2xl w-1/2 p-4 mt-10">
+      <span class="text-main-blue text-xl font-semibold mr-5">{{ job.name }}</span>
+      <div class="inline rounded-full border-2 border-main-blue px-3 py-1 text-white bg-darker-blue text-sm">
+        {{ job.start + '-' + job.end }}
+      </div>
+      <img src="../assets/img/evolbe.png" alt="" class="w-20 float-right">
+      <p class="mt-4 text-white">SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.</p>
+    </div>
+    <div>
+
+    </div>
+    </div>
+    
+  </section>
+</main>
+
+</template>
