@@ -17,7 +17,9 @@ const carreer = [
            <h2>Desarrollador Full Stack</h2>
             <h1 class="text-5xl mb-4">Diego Gutiérrez</h1>
             <span class="text-white font-della 2xl:text-lg">
-              Disfruto de cada parte del desarrollo porque me apasiona saber más que ayer y me motiva saber que mañana sabré más, por eso, presto atención al detalle y día a día me formo para ser el desarrollador que quiero ser, todo esto con la atención al detalle y proactividad propias de una persona que ama lo que hace.<br>
+              Me apasiona el desarrollo porque cada día representa una oportunidad para aprender algo nuevo y mejorar.<br>
+              Mi enfoque en la atención al detalle y mi actitud proactiva, me impulsan a seguir formándome constantemente
+              para convertirme en el desarrollador que quiero ser.<br>
             </span>
         </div>
        
