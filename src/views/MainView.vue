@@ -1,18 +1,27 @@
-<script setup lang="ts">
+<script setup>
 import AppButton from '@/components/AppButton.vue';
 
+const carreer = [
+  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Migrando una aplicación basada en la gestión de proveedores, clientes, facturas, etc. de Vue 2 Options API a Vue 3, y de VueX a Pinia.'},
+  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jul. 2023', description: 'Prácticas laborales buscadas por mi cuenta en un equipo de 10 personas, donde amplié mi contrato en prácticas un mes en pos de aprender las bases de Vue.js y Laravel.'},
+  {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, me pareció una forma muy interesante de tener conocimientos relacionados con la programación web, bases de datos, funcionamiento de la red, protocolos HTTP, etc.'},
+  {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, desde entonces he realizado multiples cursos por mi cuenta, persiguiendo mi objetivo.'},
+]
 </script>
 
 <template>
   <main>
-    <div class="flex justify-center items-center pt-14 pb-10 px-60">
+    <div class="flex justify-center gap-14 items-center py-24 px-60">
 
       <div  class="w-1/2">
         <div class="mb-10">
            <h2>Desarrollador Full Stack</h2>
             <h1 class="text-5xl mb-4">Diego Gutiérrez</h1>
-            <span class="text-white font-della text-lg">
-              Disfruto de cada parte del desarrollo porque me apasiona saber más que ayer y me motiva saber que mañana sabré más, por eso, presto atención al detalle y día a día me formo para ser el desarrollador que quiero ser, todo esto con la atención al detalle y proactividad propias de una persona que ama lo que hace.<br>
+            <span class="text-white font-della 2xl:text-lg">
+              Me apasiona el desarrollo porque cada día representa una oportunidad para aprender algo nuevo y mejorar.<br>
+              Mi enfoque en la atención al detalle y mi actitud proactiva, me impulsan a seguir formándome constantemente
+              para convertirme en el desarrollador que quiero ser.<br>
             </span>
         </div>
        
@@ -78,15 +87,30 @@ import AppButton from '@/components/AppButton.vue';
       </div>
 
     </div>
-  </main>
-</template>
+  <section class="py-24">
+    <div class="m-auto w-1/2 mb-20">
+      <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
 
-<!-- <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style> -->
+    </div>
+    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex">
+      <div class="absolute border-dashed border-white h-full border" ></div>
+      <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
+        <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
+          <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
+            <span class=" text-white text-nowrap font-semibold" 
+            :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
+            <span class=" text-main-blue font-semibold text-xl hover:text-2xl cursor-pointer" 
+            :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
+          </div>
+
+          <p class="text-white-grey text-lg mt-4">
+            {{ step.description }}
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+</template>
