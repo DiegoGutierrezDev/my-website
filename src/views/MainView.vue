@@ -92,7 +92,7 @@ const carreer = [
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
 
     </div>
-    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex">
+    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex pb-6">
       <div class="absolute border-dashed border-white h-full border" ></div>
       <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
         <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
