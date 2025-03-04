@@ -4,7 +4,9 @@ import AppButton from '@/components/AppButton.vue';
 const carreer = [
   {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Migrando una aplicación basada en la gestión de proveedores, clientes, facturas, etc. de Vue 2 Options API a Vue 3, y de VueX a Pinia.'},
   {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.'},
-  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jun. 2023', description: 'Prácticas laborales buscadas por mi cuenta en un equipo de 10 personas, donde amplié mi contrato en prácticas un mes en pos de aprender las bases de Vue.js y Laravel.'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jul. 2023', description: 'Prácticas laborales buscadas por mi cuenta en un equipo de 10 personas, donde amplié mi contrato en prácticas un mes en pos de aprender las bases de Vue.js y Laravel.'},
+  {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, me pareció una forma muy interesante de tener conocimientos relacionados con la programación web, bases de datos, funcionamiento de la red, protocolos HTTP, etc.'},
+  {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, desde entonces he realizado multiples cursos por mi cuenta, persiguiendo mi objetivo.'},
 ]
 </script>
 
@@ -88,9 +90,6 @@ const carreer = [
   <section class="py-24">
     <div class="m-auto w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
-      <span class="text-white font-della text-lg">
-      Cuento con 2 años de experiencia laboral, pero también he estado varios años estudiando hasta lograr mi objetivo:
-      </span>
 
     </div>
     <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex">
@@ -98,9 +97,9 @@ const carreer = [
       <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
         <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
           <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
-            <span class=" text-white font-semibold" 
+            <span class=" text-white text-nowrap font-semibold" 
             :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
-            <span class=" text-main-blue font-semibold text-xl" 
+            <span class=" text-main-blue font-semibold text-xl hover:text-2xl cursor-pointer" 
             :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
           </div>
 
