@@ -1,22 +1,22 @@
 <script setup>
 import AppButton from '@/components/AppButton.vue';
 
-const companies = [
-  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025'},
-  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024'},
-  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jun. 2023'},
+const carreer = [
+  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Migrando una aplicación basada en la gestión de proveedores, clientes, facturas, etc. de Vue 2 Options API a Vue 3, y de VueX a Pinia.'},
+  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jun. 2023', description: 'Prácticas laborales buscadas por mi cuenta en un equipo de 10 personas, donde amplié mi contrato en prácticas un mes en pos de aprender las bases de Vue.js y Laravel.'},
 ]
 </script>
 
 <template>
   <main>
-    <div class="flex justify-center items-center py-24 px-60">
+    <div class="flex justify-center gap-14 items-center py-24 px-60">
 
       <div  class="w-1/2">
         <div class="mb-10">
            <h2>Desarrollador Full Stack</h2>
             <h1 class="text-5xl mb-4">Diego Gutiérrez</h1>
-            <span class="text-white font-della text-lg">
+            <span class="text-white font-della 2xl:text-lg">
               Disfruto de cada parte del desarrollo porque me apasiona saber más que ayer y me motiva saber que mañana sabré más, por eso, presto atención al detalle y día a día me formo para ser el desarrollador que quiero ser, todo esto con la atención al detalle y proactividad propias de una persona que ama lo que hace.<br>
             </span>
         </div>
@@ -84,25 +84,31 @@ const companies = [
 
     </div>
   <section class="py-24">
-    <div class="m-auto w-1/2">
+    <div class="m-auto w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
       <span class="text-white font-della text-lg">
-      Cuento con 2 años de experiencia laboral, y siempre bajo el mismo stack, en el que me he preocupado de aprender las mejores prácticas, desarrollando en:
+      Cuento con 2 años de experiencia laboral, pero también he estado varios años estudiando hasta lograr mi objetivo:
       </span>
 
-    <div v-for="job in companies" :key="job.name" class="bg-white-grey rounded-2xl w-1/2 p-4 mt-10">
-      <span class="text-main-blue text-xl font-semibold mr-3">{{ job.name }}</span>
-      <div class="inline rounded-full border-2 border-main-blue px-3 py-1 text-white bg-darker-blue text-xs">
-        {{ job.start + '-' + job.end }}
-      </div>
-      <img src="../assets/img/evolbe.png" alt="" class="w-20 float-right">
-      <p class="mt-4 text-white">SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.</p>
     </div>
-    <div>
+    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex">
+      <div class="absolute border-dashed border-white h-full border" ></div>
+      <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
+        <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
+          <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
+            <span class=" text-white font-semibold" 
+            :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
+            <span class=" text-main-blue font-semibold text-xl" 
+            :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
+          </div>
 
+          <p class="text-white-grey text-lg mt-4">
+            {{ step.description }}
+          </p>
+
+        </div>
+      </div>
     </div>
-    </div>
-    
   </section>
 </main>
 
