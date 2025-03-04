@@ -20,8 +20,7 @@ const carreer = [
             <h1 class="text-5xl mb-4">Diego Gutiérrez</h1>
             <span class="text-white font-della 2xl:text-lg">
               Me apasiona el desarrollo porque cada día representa una oportunidad para aprender algo nuevo y mejorar.<br>
-              Mi enfoque en la atención al detalle y mi actitud proactiva, me impulsan a seguir formándome constantemente
-              para convertirme en el desarrollador que quiero ser.<br>
+              Mi enfoque en la atención al detalle y mi actitud proactiva me impulsan a seguir formándome constantemente para convertirme en el desarrollador que quiero ser.<br>
             </span>
         </div>
        
