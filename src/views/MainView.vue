@@ -2,11 +2,11 @@
 import AppButton from '@/components/AppButton.vue';
 
 const carreer = [
-  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Migrando una aplicación basada en la gestión de proveedores, clientes, facturas, etc. de Vue 2 Options API a Vue 3, y de VueX a Pinia.'},
-  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado en aras de facilitar tareas de RRHH y la empresa que me permitió crecer profesionalmente al mismo tiempo que ellos, ya que mientras estuve allí, vivió un gran crecimiento tanto empresarial como en la propia herramienta homónima.'},
-  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jul. 2023', description: 'Prácticas laborales buscadas por mi cuenta en un equipo de 10 personas, donde amplié mi contrato en prácticas un mes en pos de aprender las bases de Vue.js y Laravel.'},
-  {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, me pareció una forma muy interesante de tener conocimientos relacionados con la programación web, bases de datos, funcionamiento de la red, protocolos HTTP, etc.'},
-  {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, desde entonces he realizado multiples cursos por mi cuenta, persiguiendo mi objetivo.'},
+  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Desarrolando en un CRM interno orientado a la gestión de proveedores, clientes, facturas y diversos elementos en colaboración con Prinex. Llevando a cabo la migración de Vue 2 con Options API a Vue 3, así como la transición de VueX a Pinia para la gestión del estado.'},
+  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado con el objetivo de optimizar las tareas de RRHH. Durante mi tiempo allí, contribuí al crecimiento de la empresa que me brindó la oportunidad de desarrollarme profesionalmente mientras ésta experimentaba un notable crecimiento, tanto a nivel corporativo como en la evolución de la herramienta homónima.'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jul. 2023', description: 'Gestioné de manera independiente la búsqueda de prácticas laborales, encontrándolas en una empresa especializada en desarrollo web. Allí, colaboré en un equipo de 10 personas, donde amplié mi contrato en prácticas en pos de aprender las bases de Vue.js y Laravel.'},
+  {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, una formación que consideré una excelente oportunidad para adquirir conocimientos clave en áreas como programación web, bases de datos, funcionamiento de redes y protocolos HTTP, entre otros.'},
+  {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, he completado numerosos cursos de forma autodidacta, siempre enfocado en alcanzar mi objetivo profesional.'},
 ]
 </script>
 
@@ -98,11 +98,11 @@ const carreer = [
           <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
             <span class=" text-white text-nowrap font-semibold" 
             :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
-            <span class=" text-main-blue font-semibold text-xl hover:text-2xl cursor-pointer" 
+            <span class=" text-main-blue font-semibold text-2xl" 
             :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
           </div>
 
-          <p class="text-white-grey text-lg mt-4">
+          <p class="text-white-grey text-lg mt-4" :class="index % 2 != 0 ? 'text-start' : 'text-end'">
             {{ step.description }}
           </p>
 
