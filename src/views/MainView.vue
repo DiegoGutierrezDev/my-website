@@ -124,7 +124,7 @@ const stack = [
   </section>
   <section>
     <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
-    <div class="justify-center items-center flex">
+    <div class="justify-center items-center flex mb-20">
       <div class="bg-grey-dark-2 w-1/2 rounded-2xl p-8 flex gap-4 justify-center">
         <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark w-20 h-20 p-4 rounded-lg items-center flex cursor-pointer transition duration-300 
         hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
