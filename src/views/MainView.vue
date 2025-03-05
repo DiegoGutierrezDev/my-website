@@ -1,18 +1,26 @@
-<script setup lang="ts">
+<script setup>
 import AppButton from '@/components/AppButton.vue';
 
+const carreer = [
+  {name: 'Overtek', start: 'Nov. 2024', end: 'Feb. 2025', description: 'Desarrolando en un CRM interno orientado a la gestión de proveedores, clientes, facturas y diversos elementos en colaboración con Prinex. Llevando a cabo la migración de Vue 2 con Options API a Vue 3, así como la transición de VueX a Pinia para la gestión del estado.'},
+  {name: 'Evolbe', start: 'Abr. 2023', end: 'May. 2024', description: 'SaaS desarrollado con el objetivo de optimizar las tareas de RRHH. Durante mi tiempo allí, contribuí al crecimiento de la empresa que me brindó la oportunidad de desarrollarme profesionalmente mientras ésta experimentaba un notable crecimiento, tanto a nivel corporativo como en la evolución de la herramienta homónima.'},
+  {name: 'AppyWeb', start: 'Mar. 2023', end: 'Jul. 2023', description: 'Gestioné de manera independiente la búsqueda de prácticas laborales, encontrándolas en una empresa especializada en desarrollo web. Allí, colaboré en un equipo de 10 personas, donde amplié mi contrato en prácticas en pos de aprender las bases de Vue.js y Laravel.'},
+  {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, una formación que consideré una excelente oportunidad para adquirir conocimientos clave en áreas como programación web, bases de datos, funcionamiento de redes y protocolos HTTP, entre otros.'},
+  {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, he completado numerosos cursos de forma autodidacta, siempre enfocado en alcanzar mi objetivo profesional.'},
+]
 </script>
 
 <template>
   <main>
-    <div class="flex justify-center items-center pt-14 pb-10 px-60">
+    <div class="flex justify-center gap-14 items-center py-24 px-60">
 
       <div  class="w-1/2">
         <div class="mb-10">
            <h2>Desarrollador Full Stack</h2>
             <h1 class="text-5xl mb-4">Diego Gutiérrez</h1>
-            <span class="text-white font-della text-lg">
-              Disfruto de cada parte del desarrollo porque me apasiona saber más que ayer y me motiva saber que mañana sabré más, por eso, presto atención al detalle y día a día me formo para ser el desarrollador que quiero ser, todo esto con la atención al detalle y proactividad propias de una persona que ama lo que hace.<br>
+            <span class="text-white font-della 2xl:text-lg">
+              Me apasiona el desarrollo porque cada día representa una oportunidad para aprender algo nuevo y mejorar.<br>
+              Mi enfoque en la atención al detalle y mi actitud proactiva me impulsan a seguir formándome constantemente para convertirme en el desarrollador que quiero ser.<br>
             </span>
         </div>
        
@@ -78,15 +86,30 @@ import AppButton from '@/components/AppButton.vue';
       </div>
 
     </div>
-  </main>
-</template>
+  <section class="py-24">
+    <div class="m-auto w-1/2 mb-20">
+      <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
 
-<!-- <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style> -->
+    </div>
+    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex pb-6">
+      <div class="absolute border-dashed border-white h-full border" ></div>
+      <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
+        <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
+          <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
+            <span class=" text-white text-nowrap font-semibold" 
+            :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
+            <span class=" text-main-blue font-semibold text-2xl" 
+            :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
+          </div>
+
+          <p class="text-white-grey text-lg mt-4" :class="index % 2 != 0 ? 'text-start' : 'text-end'">
+            {{ step.description }}
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+</template>
