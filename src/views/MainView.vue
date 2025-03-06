@@ -9,16 +9,16 @@ const carreer = [
   {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, he completado numerosos cursos de forma autodidacta, siempre enfocado en alcanzar mi objetivo profesional.'},
 ]
 const stack = [
-  {name: 'Vue', description: 'Mi framework favorito para el front.', color: '#42b883', icon: 'src/assets/img/vue.png'},
-  {name: 'VueX', description: 'Mi framework favorito para el front.', color: '#42b883', icon: 'src/assets/img/vuex.png'},
-  {name: 'Pinia', description: 'Mi framework favorito para el front.', color: '#FFCA41', icon: 'src/assets/img/pinia.png'},
-  {name: 'Nuxt', description: 'Mi framework favorito para el front.', color: '#00DC82', icon: 'src/assets/img/nuxt.png'},
-  {name: 'Javascript', description: 'Mi framework favorito para el front.', color: '#f0db4f', icon: 'src/assets/img/javascript.png'},
-  {name: 'TailWindCSS', description: 'Mi framework favorito para el front.', color: '#06b6d4', icon: 'src/assets/img/tailwind.png'},
-  {name: 'Laravel', description: 'Mi framework favorito para el front.', color: '#F05340', icon: 'src/assets/img/laravel.png'},
-  {name: 'PHP', description: 'Mi framework favorito para el front.', color: '#474A8A', icon: 'src/assets/img/php.png'},
-  {name: 'Git', description: 'Mi framework favorito para el front.', color: '#f1502f', icon: 'src/assets/img/git.png'},
-  {name: 'MySQL', description: 'Mi framework favorito para el front.', color: '#00758f', icon: 'src/assets/img/mysql.png'},
+  {name: 'Vue', description: 'Mi framework favorito para el front.', color: '#42b883', icon: '/assets/img/vue.png'},
+  {name: 'VueX', description: 'Mi framework favorito para el front.', color: '#42b883', icon: '/assets/img/vuex.png'},
+  {name: 'Pinia', description: 'Mi framework favorito para el front.', color: '#FFCA41', icon: '/assets/img/pinia.png'},
+  {name: 'Nuxt', description: 'Mi framework favorito para el front.', color: '#00DC82', icon: '/assets/img/nuxt.png'},
+  {name: 'Javascript', description: 'Mi framework favorito para el front.', color: '#f0db4f', icon: '/assets/img/javascript.png'},
+  {name: 'TailWindCSS', description: 'Mi framework favorito para el front.', color: '#06b6d4', icon: '/assets/img/tailwind.png'},
+  {name: 'Laravel', description: 'Mi framework favorito para el front.', color: '#F05340', icon: '/assets/img/laravel.png'},
+  {name: 'PHP', description: 'Mi framework favorito para el front.', color: '#474A8A', icon: '/assets/img/php.png'},
+  {name: 'Git', description: 'Mi framework favorito para el front.', color: '#f1502f', icon: '/assets/img/git.png'},
+  {name: 'MySQL', description: 'Mi framework favorito para el front.', color: '#00758f', icon: '/assets/img/mysql.png'},
 ]
 </script>
 
