@@ -11,7 +11,7 @@ const carreer = [
 const stack = [
   {name: 'Vue', description: 'Mi framework favorito para el front.', color: '#42b883', icon: 'src/assets/img/vue.png'},
   {name: 'VueX', description: 'Mi framework favorito para el front.', color: '#42b883', icon: 'src/assets/img/vuex.png'},
-  {name: 'Pinia', description: 'Mi framework favorito para el front.', color: '#CC9F2F', icon: 'src/assets/img/pinia.png'},
+  {name: 'Pinia', description: 'Mi framework favorito para el front.', color: '#FFCA41', icon: 'src/assets/img/pinia.png'},
   {name: 'Nuxt', description: 'Mi framework favorito para el front.', color: '#00DC82', icon: 'src/assets/img/nuxt.png'},
   {name: 'Javascript', description: 'Mi framework favorito para el front.', color: '#f0db4f', icon: 'src/assets/img/javascript.png'},
   {name: 'TailWindCSS', description: 'Mi framework favorito para el front.', color: '#06b6d4', icon: 'src/assets/img/tailwind.png'},
@@ -101,6 +101,7 @@ const stack = [
   <section class="py-24">
     <div class="m-auto w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
+      <h2 class="text-white text-lg text-center">A lo largo de mi carrera he procurado aprender al máximo, tanto a nivel teórico como práctico.</h2>
 
     </div>
     <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex pb-6">
@@ -124,9 +125,10 @@ const stack = [
   </section>
   <section>
     <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
+    <h2 class="text-white text-lg text-center  mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
     <div class="justify-center items-center flex mb-20">
       <div class="bg-grey-dark-2 w-1/2 rounded-2xl p-8 flex gap-4 justify-center">
-        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark w-20 h-20 p-4 rounded-lg items-center flex cursor-pointer transition duration-300 
+        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark w-20 h-20 p-4 rounded-lg items-center flex transition duration-300 
         hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
          <img :src="tool.icon" alt="">
         </div>
