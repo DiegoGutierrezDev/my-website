@@ -8,6 +8,18 @@ const carreer = [
   {name: 'C.F.G.S. Administración de Sistemas Informáticos en Red', start: '2021', end: '2023', description: 'Soy Técnico Superior en Administración de Sistemas Informáticos en Red, una formación que consideré una excelente oportunidad para adquirir conocimientos clave en áreas como programación web, bases de datos, funcionamiento de redes y protocolos HTTP, entre otros.'},
   {name: 'Aprendizaje autodidacta', start: '2018', end: 'Actualidad', description: 'En 2018 descubrí mi vocación y desde entonces, no he parado de aprender, he completado numerosos cursos de forma autodidacta, siempre enfocado en alcanzar mi objetivo profesional.'},
 ]
+const stack = [
+  {name: 'Vue', description: 'Mi framework favorito para el front.', color: '#42b883', icon: '/skills_icons/vue.png'},
+  {name: 'VueX', description: 'Mi framework favorito para el front.', color: '#42b883', icon: '/skills_icons/vuex.png'},
+  {name: 'Pinia', description: 'Mi framework favorito para el front.', color: '#FFCA41', icon: '/skills_icons/pinia.png'},
+  {name: 'Nuxt', description: 'Mi framework favorito para el front.', color: '#00DC82', icon: '/skills_icons/nuxt.png'},
+  {name: 'Javascript', description: 'Mi framework favorito para el front.', color: '#f0db4f', icon: '/skills_icons/javascript.png'},
+  {name: 'TailWindCSS', description: 'Mi framework favorito para el front.', color: '#06b6d4', icon: '/skills_icons/tailwind.png'},
+  {name: 'Laravel', description: 'Mi framework favorito para el front.', color: '#F05340', icon: '/skills_icons/laravel.png'},
+  {name: 'PHP', description: 'Mi framework favorito para el front.', color: '#474A8A', icon: '/skills_icons/php.png'},
+  {name: 'Git', description: 'Mi framework favorito para el front.', color: '#f1502f', icon: '/skills_icons/git.png'},
+  {name: 'MySQL', description: 'Mi framework favorito para el front.', color: '#00758f', icon: '/skills_icons/mysql.png'},
+]
 </script>
 
 <template>
@@ -89,6 +101,7 @@ const carreer = [
   <section class="py-24">
     <div class="m-auto w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
+      <h2 class="text-white text-lg text-center">A lo largo de mi carrera he procurado aprender al máximo, tanto a nivel teórico como práctico.</h2>
 
     </div>
     <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex pb-6">
@@ -110,6 +123,24 @@ const carreer = [
       </div>
     </div>
   </section>
+  <section>
+    <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
+    <h2 class="text-white text-lg text-center  mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
+    <div class="justify-center items-center flex mb-20">
+      <div class="bg-grey-dark-2 w-1/2 rounded-2xl p-8 flex gap-4 justify-center">
+        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark w-20 h-20 p-4 rounded-lg items-center flex transition duration-300 
+        hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
+         <img :src="tool.icon" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 </template>
+
+<style>
+.hoverCustomColor:hover{
+  background-color: var(--custom_color);
+}
+</style>
