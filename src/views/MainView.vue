@@ -103,24 +103,24 @@ const stack = [
 
     </div>
   </section>
-  <section class="py-24">
-    <div class="m-auto w-1/2 mb-20">
+  <section class="py-24 max-md:px-10">
+    <div class="md:mx-auto md:w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
       <h2 class="text-white text-xl text-center">A lo largo de mi carrera he procurado aprender al máximo, tanto a nivel teórico como práctico.</h2>
 
     </div>
-    <div v-for="step,index in carreer" :key="step.name" class="w-full px-24 relative justify-center flex pb-6">
-      <div class="absolute border-dashed border-white h-full border" ></div>
-      <div class="flex gap-4 mr" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
-        <div class="w-1/2 " :class=" index % 2 == 0 ? 'pr-10' : 'pl-10'">
-          <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'justify-start' : 'justify-end'">
-            <span class=" text-white text-nowrap font-semibold" 
-            :class="index % 2 != 0 ? 'order-2' : 'order-1'">{{ step.start + ' - ' + step.end }}</span>
+    <div v-for="step,index in carreer" :key="step.name" class="px-24 relative justify-center flex pb-6">
+      <div class="hidden md:block absolute border-dashed border-white h-full border" ></div>
+      <div class="flex" :class=" index % 2 == 0 ? 'justify-start' : 'justify-end'">
+        <div class="md:w-1/2 " :class=" index % 2 == 0 ? 'md:pr-10' : 'md:pl-10'">
+          <div class="items-end flex gap-3" :class="index % 2 != 0 ? 'md:justify-start' : 'md:justify-end'">
             <span class=" text-main-blue font-semibold text-2xl" 
-            :class="index % 2 != 0 ? 'order-1' : 'order-2'">{{ step.name }}</span>
+            :class="index % 2 != 0 ? 'md:order-1' : 'md:order-2'">{{ step.name }}</span>
+            <span class=" text-white text-nowrap font-semibold" 
+            :class="index % 2 != 0 ? 'md:order-2' : 'md:order-1'">{{ step.start + ' - ' + step.end }}</span>
           </div>
 
-          <p class="text-white-grey text-lg mt-4" :class="index % 2 != 0 ? 'text-start' : 'text-end'">
+          <p class="text-white-grey text-lg mt-4" :class="index % 2 != 0 ? 'md:text-start' : 'md:text-end'">
             {{ step.description }}
           </p>
 
