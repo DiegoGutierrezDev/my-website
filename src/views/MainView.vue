@@ -133,8 +133,8 @@ const stack = [
     <h2 class="text-white text-lg text-center mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
     <div class="flex justify-center items-center mb-20">
       <div class="flex gap-4 p-8 bg-grey-dark-2 max-md:overflow-scroll rounded-2xl">
-        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark flex items-center justify-center rounded-lg w-28 h-28 md:w-20 md:h-20 p-6 md:p-4 transition duration-300 hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
-          <img :src="tool.icon" alt="" class="max-sm:max-w-24">
+        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark flex items-center justify-center rounded-lg  md:w-20 md:h-20 p-4 transition duration-300 hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
+          <img :src="tool.icon" alt="" class="max-sm:max-w-16 max-sm:max-h-16">
         </div>
       </div>
     </div>
