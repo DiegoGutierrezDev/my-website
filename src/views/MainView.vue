@@ -27,7 +27,7 @@ const stack = [
     <section class="px-10">
     <div class="flex justify-center gap-14 items-center md:pb-24 pt-16 md:px-48">
 
-      <div class="md:w-1/2">
+      <div class="lg:w-1/2">
         <div class="mb-10">
            <h2 class="max-md:text-xl max-md:text-center">Desarrollador Full Stack</h2>
             <h1 class="max-md:text-3xl max-md:text-center text-5xl mb-4">Diego Gutiérrez</h1>
@@ -97,7 +97,7 @@ const stack = [
         </div>
       </div>
 
-      <div class="hidden md:block w-1/2 justify-end items-end flex">
+      <div class="hidden lg:block w-1/2 justify-end items-end flex">
        <img src="../assets/img/developer2.png" alt="" class="w-[500px]">
       </div>
 
@@ -128,13 +128,13 @@ const stack = [
       </div>
     </div>
   </section>
-  <section class="max-md:px-10">
+  <section class="max-xl:mx-10">
     <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
     <h2 class="text-white text-lg text-center mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
-    <div class="flex justify-center items-center mb-20">
-      <div class="flex gap-4 p-8 bg-grey-dark-2 max-md:overflow-scroll rounded-2xl">
-        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark flex items-center justify-center rounded-lg  md:w-20 md:h-20 p-4 transition duration-300 hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
-          <img :src="tool.icon" alt="" class="max-sm:max-w-16 max-sm:max-h-16">
+    <div class="flex lg:justify-center items-center mb-20">
+      <div class="flex gap-4 p-8 bg-grey-dark-2 max-lg:overflow-scroll rounded-2xl">
+        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark flex items-center justify-center rounded-lg lg:w-20 lg:h-20 p-4 transition duration-300 hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
+          <img :src="tool.icon" alt="" class="max-lg:max-w-16 max-lg:max-h-16">
         </div>
       </div>
     </div>
