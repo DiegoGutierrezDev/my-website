@@ -1,6 +1,6 @@
 <template>
-        <div class="grid grid-cols-4 w-full shrink-0 items-center gap-2 border-t px-4 py-6">
-            <p class="text-white-grey text-left text-semibold">© 2025 Diego Gutiérrez. All rights reserved.</p>
+        <div class="md:grid md:grid-cols-4 w-full shrink-0 justify-center items-center gap-2 border-t px-4 py-6">
+            <p class="text-white-grey text-center p-2 md:p-0 md:text-left text-semibold">© 2025 Diego Gutiérrez. All rights reserved.</p>
 
             <div class="flex col-span-2 justify-center items-center gap-8 font-hind text-white">
                 <a href="mailto:gutierrezmaria.diego@gmail.com" class="size-8">
