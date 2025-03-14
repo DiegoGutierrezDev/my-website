@@ -128,14 +128,13 @@ const stack = [
       </div>
     </div>
   </section>
-  <section>
+  <section class="max-md:px-10">
     <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
-    <h2 class="text-white text-lg text-center  mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
-    <div class="justify-center items-center flex mb-20">
-      <div class="bg-grey-dark-2 w-1/2 rounded-2xl p-8 flex gap-4 justify-center">
-        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark w-20 h-20 p-4 rounded-lg items-center flex transition duration-300 
-        hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
-         <img :src="tool.icon" alt="">
+    <h2 class="text-white text-lg text-center mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
+    <div class="flex justify-center items-center mb-20">
+      <div class="flex gap-4 p-8 bg-grey-dark-2 max-md:overflow-scroll rounded-2xl">
+        <div v-for="tool in stack" :key="tool.name" class="bg-grey-dark flex items-center justify-center rounded-lg w-28 h-28 md:w-20 md:h-20 p-6 md:p-4 transition duration-300 hover:-translate-y-1 hover:scale-110 hoverCustomColor"  :style="`--custom_color: ${tool.color}`">
+          <img :src="tool.icon" alt="" class="max-sm:max-w-24">
         </div>
       </div>
     </div>
