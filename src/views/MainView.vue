@@ -123,8 +123,8 @@ import { stack, carreer } from '@/constants/data';
 
   <section>
     <div class="flex justify-center">
-      <form name="contact" method="POST" netlify>
-        <input type="hidden" name="contact" value="contact" />
+      <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
