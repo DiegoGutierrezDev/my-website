@@ -84,7 +84,7 @@ import { stack, carreer } from '@/constants/data';
 
     </div>
   </section>
-  <section class="py-24 max-md:px-10">
+  <section class="py-24 max-md:px-10" id="carreer">
     <div class="md:mx-auto md:w-1/2 mb-20">
       <h1 class="text-center text-5xl mb-8">Mi carrera profesional</h1>
       <h2 class="text-white text-xl text-center">A lo largo de mi carrera he procurado aprender al máximo, tanto a nivel teórico como práctico.</h2>
@@ -109,7 +109,7 @@ import { stack, carreer } from '@/constants/data';
       </div>
     </div>
   </section>
-  <section class="max-xl:mx-10">
+  <section class="max-xl:mx-10" id="stack">
     <h1 class="text-center text-5xl mb-8">Mi Stack</h1>
     <h2 class="text-white text-lg text-center mb-16">A lo largo de estos años, me he especializado y profundizado en este stack, el cual ha sido clave en el desarrollo de mis proyectos y crecimiento profesional.</h2>
     <div class="flex lg:justify-center items-center mb-20">
@@ -121,7 +121,7 @@ import { stack, carreer } from '@/constants/data';
     </div>
   </section>
 
-  <section class="p-10 mb-4">
+  <section class="p-10 mb-4" id="contact">
     <h1 class="text-center text-5xl mb-8">¿Quieres saber más?</h1>
     <h2 class="text-center text-white text-lg mb-16">Contáctame a través de este formulario o a través de mi E-mail: Gutiérrezmaria.diego@gmail.com</h2>
     <div class="flex justify-center">

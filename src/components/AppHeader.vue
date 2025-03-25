@@ -10,8 +10,9 @@
             </div>
 
             <div class="w-96 flex max-sm:p-4 justify-around items-center font-hind text-white">
-                <router-link to="/about">Mi historia</router-link>
-                <router-link to="#">Mis Skills</router-link>
+                <router-link :to="{ hash: '#carreer' }">Mi Carrera</router-link>
+                <router-link :to="{ hash: '#stack' }">Mis Skills</router-link>
+                <router-link :to="{ hash: '#contact' }">Contacto</router-link>
             </div>
 
         </div>
