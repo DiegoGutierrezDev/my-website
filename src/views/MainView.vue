@@ -121,29 +121,48 @@ import { stack, carreer } from '@/constants/data';
     </div>
   </section>
 
-  <section>
+  <section class="p-10 mb-4">
+    <h1 class="text-center text-5xl mb-8">¿Quieres saber más?</h1>
+    <h2 class="text-center text-white text-lg mb-16">Contáctame a través de este formulario o a través de mi E-mail: Gutiérrezmaria.diego@gmail.com</h2>
     <div class="flex justify-center">
-      <form name="contact" method="POST" netlify netlify-honeypot="bot-field">
+      <div class="bg-grey-blue px-16 py-10 border border-main-blue rounded-2xl">
+        <form name="contact" method="POST" netlify netlify-honeypot="bot-field" class="grid justify-center gap-8">
         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <label class="text-white font-semibold block">
+              Nombre:
+            </label>
+              <input type="text" name="name" class="mt-2 h-10 w-56 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu nombre"/>
+          </div>
+            
+          <div>
+            <label class="text-white font-semibold block">
+              Email: 
+            </label>
+              <input type="email" name="email" class="mt-2 h-10 w-56 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu correo electrónico"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 justify-center text-center">
+          <label class="text-white font-semibold mb-6">
+            Mensaje: 
+          </label>
+            <textarea name="message" class="rounded-lg border-2 border-darker-blue h-28 bg-grey-dark-2 text-white p-2" placeholder="Cuéntame sobre tu proyecto o cualquier duda!"></textarea>
+          
+        </div>
+        <div class="grid grid-cols-1">
+          <span class="text-white-grey font-montserrat text-sm mb-8">Responderé con la mayor brevedad posible, gracias!</span>
+          <AppButton class="w-1/2 justify-self-center">
+                <template #content>
+                    <span class="mr-3 text-black">
+                    Contáctame!
+                    </span>
+                </template>
+            </AppButton>
+        </div>
+        </form>
+      </div>
+      
     </div>
     
   </section>
