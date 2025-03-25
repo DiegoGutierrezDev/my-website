@@ -128,19 +128,19 @@ import { stack, carreer } from '@/constants/data';
       <div class="bg-grey-blue px-16 py-10 border border-main-blue rounded-2xl">
         <form name="contact" method="POST" netlify netlify-honeypot="bot-field" class="grid justify-center gap-8">
         <input type="hidden" name="form-name" value="contact" />
-        <div class="grid grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-8">
           <div>
             <label class="text-white font-semibold block">
               Nombre:
             </label>
-              <input type="text" name="name" class="mt-2 h-10 w-56 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu nombre"/>
+              <input type="text" name="name" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu nombre"/>
           </div>
             
           <div>
             <label class="text-white font-semibold block">
               Email: 
             </label>
-              <input type="email" name="email" class="mt-2 h-10 w-56 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu correo electrónico"/>
+              <input type="email" name="email" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu correo electrónico"/>
           </div>
         </div>
         <div class="grid grid-cols-1 justify-center text-center">
