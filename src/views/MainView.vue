@@ -21,7 +21,7 @@ import { stack, carreer } from '@/constants/data';
 
         <div class="flex flex-col items-center justify-center md:justify-start md:flex-row">
 
-        <a href="/src/assets/documents/CV.pdf" download="cv-diego-gutierrez-2025" class="md:mr-10">
+        <a href="/documents/CV.pdf" download="cv-diego-gutierrez-2025.pdf" class="md:mr-10">
             <AppButton>
                 <template #content>
                     <span class="mr-3 text-black">
