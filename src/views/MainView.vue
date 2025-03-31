@@ -133,21 +133,21 @@ import { stack, carreer } from '@/constants/data';
             <label class="text-white font-semibold block">
               Nombre:
             </label>
-              <input type="text" name="name" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu nombre"/>
+              <input type="text" name="name" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu nombre" required/>
           </div>
             
           <div>
             <label class="text-white font-semibold block">
               Email: 
             </label>
-              <input type="email" name="email" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu correo electrónico"/>
+              <input type="email" name="email" class="mt-2 h-10 w-full lg:w-60 p-2 rounded-lg border-2 border-darker-blue bg-grey-dark-2 text-white" placeholder="Escribe tu correo electrónico" required/>
           </div>
         </div>
         <div class="grid grid-cols-1 justify-center text-center">
           <label class="text-white font-semibold mb-6">
             Mensaje: 
           </label>
-            <textarea name="message" class="rounded-lg border-2 border-darker-blue h-28 bg-grey-dark-2 text-white p-2" placeholder="Cuéntame sobre tu proyecto o cualquier duda!"></textarea>
+            <textarea name="message" class="rounded-lg border-2 border-darker-blue h-28 bg-grey-dark-2 text-white p-2" placeholder="Cuéntame sobre tu proyecto o cualquier duda!" required></textarea>
           
         </div>
         <div class="grid grid-cols-1">
