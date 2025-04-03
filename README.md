@@ -7,11 +7,11 @@ Soy Diego Gutiérrez, desarrollador FullStack y este es mi portafolio personal.
 
 Ser programador ha sido mi proyecto desde hace varios años, asi que hay mucho que contar y poco espacio en el CV, asi que si quieres tener más detalles, has llegado al sitio adecuado!
 
-![Logo](https://raw.githubusercontent.com/DiegoGutierrezDev/my-website/refs/heads/creating-components/src/assets/img/logo.png)
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" style="width: 30em;"/>
 
 ## 💻 Échale un vistazo! Está desplegado aquí:
 
-https://diegogutierrezdev.github.io/my-website/
+[DiegoGutierrezDev.com](https://diegogutierrezdev.netlify.app/)
 
 
 ## 🏆 Desarrollado en
