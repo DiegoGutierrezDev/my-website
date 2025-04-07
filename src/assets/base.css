@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: theme('colors.darker-blue');
+  color: theme('colors.main-blue');
   transform: translateY(-4px);
   transition: 0.2s;
   transition-timing-function: ease-in-out;
