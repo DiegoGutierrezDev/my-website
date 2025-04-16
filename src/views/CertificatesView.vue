@@ -1,7 +1,16 @@
 <template>
-  <div class="blue-background grid grid-cols-4 justify-between justify-items-center">
-    <div v-for="title in certificates" :key="title.year" class="rounded-lg mb-8 pa-4">
-      <div class="">
+  <div class="w-10/12 m-auto">
+    <h1 class="max-md:text-3xl max-md:text-center text-5xl mb-10 text-center">
+      Certificados
+    </h1>
+  <h2 class="text-white text-center font-della text-lg mb-10"> 
+    He dedicado gran parte de mi trayectoria a formarme de manera constante y exhaustiva. En esta sección podrás encontrar los certificados que respaldan mi experiencia profesional y mi compromiso con el aprendizaje continuo.
+  </h2>
+  <div class="p-8 rounded-3xl bg-cyan-700 w-1/2 justify-self-center mb-12">
+
+  </div>
+  <div class="grid grid-cols-4 justify-between justify-items-center">
+    <div v-for="title in certificates" :key="title.year" class="rounded-lg mb-8 pa-4 block">
         <h1>
           {{ title.year }}
         </h1>
@@ -9,20 +18,17 @@
           {{ title.title }}
         </h2>
 
-        <img src="../assets/img/frame.png" 
-          alt="" 
-          class="absolute z-40 w-[335px] h-[260px]" 
-          >
         <div class="rounded-lg pt-[1.33rem]">
           <img 
             :src="title.src" 
             alt="" 
-            class="pl-1 pr-0.5 w-[335px] h-[236px] rounded-3xl" 
+            class="pl-1 pr-0.5  rounded-3xl" 
             >
         </div>
-      </div>
     </div>
   </div>
+  </div>
+  
 </template>
 
 <script setup>
@@ -30,7 +36,12 @@ import { ref } from 'vue'
 
 // Data
 const certificates = ref([
-  {title: 'Javascript', year: '2018', src: "src/assets/titles/JavaScript.png"},
+  {
+    2023: [
+      {title: 'Javascript', year: '2018', src: "src/assets/titles/JavaScript.png"}
+    ]
+  },
+  
   {title: 'Desarrollo Web I', year: '2019', src: "src/assets/titles/WebDev1.png"},
   {title: 'Desarrollo de Apps Moviles', year: '2019', src: "src/assets/titles/AppsMoviles.png"},
   {title: 'Básicos de Android', year: '2020', src: "src/assets/titles/BasicsAndroid.png"},
