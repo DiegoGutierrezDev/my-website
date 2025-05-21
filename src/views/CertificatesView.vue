@@ -7,18 +7,30 @@
     He dedicado gran parte de mi trayectoria a formarme de manera constante y exhaustiva. En esta sección podrás encontrar los certificados que respaldan mi experiencia profesional y mi compromiso con el aprendizaje continuo.
   </h2>
 
-  <div class="flex p-4 rounded-full bg-cyan-700 w-1/2 justify-self-center mb-12 justify-around">
-    <span 
+  <div class="relative flex p-4 rounded-full bg-cyan-700 w-1/2 justify-self-center mb-12 justify-around z-50">
+    <button 
       v-for="year, index in years" 
       :key="index" 
       class="py-4 px-8 font-semibold rounded-full cursor-pointer" 
       :class="selectedYear === year ? 'font-bold shadow-2xl bg-white' : ''"
-      @click="selectedYear != 'all' ? selectedYear = 'all'  : orderCertificates(year)">
+      @click="selectedYear != year ? orderCertificates(year) : selectedYear = 'all'">
       {{ year }}
-    </span>
-    <span v-if="selectedYear != 'all'">
-      🗑
-    </span>
+    </button>
+    <transition
+    enter-active-class="transition-all duration-300 ease-out"
+      enter-from-class="opacity-0 scale-y-0 origin-top"
+      enter-to-class="opacity-100 scale-y-100 origin-top"
+      leave-active-class="transition-all duration-200 ease-in"
+      leave-from-class="opacity-100 scale-y-100 origin-top"
+      leave-to-class="opacity-0 scale-y-0 origin-top"
+     >
+    <div v-if="selectedYear != 'all'" class="bg-cyan-700 w-10 h-12 rounded-b-lg absolute -bottom-10 justify-center items-center flex z-10">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-trash" viewBox="0 0 16 16">
+        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+      </svg>
+    </div>
+    </transition>
   </div>
 
   <div class="grid grid-cols-4 justify-between justify-items-center">
