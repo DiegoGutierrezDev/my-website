@@ -11,12 +11,12 @@
     </h2>
 
     <div
-      class="relative flex p-4 rounded-full bg-cyan-700 w-1/2 justify-self-center mb-12 justify-around z-50"
+      class="relative flex p-4 rounded-full bg-cyan-700 justify-self-center mb-12 justify-around z-50"
     >
       <button
         v-for="(year, index) in years"
         :key="index"
-        class="py-4 px-8 font-semibold rounded-full cursor-pointer"
+        class="py-2 px-2 md:py-4 md:px-8 font-semibold rounded-full cursor-pointer"
         :class="selectedYear === year ? 'font-bold shadow-2xl bg-white' : ''"
         @click="
           selectedYear != year
@@ -59,7 +59,7 @@
     </div>
 
     <div
-      class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-between justify-items-center"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between justify-items-center"
     >
       <div
         v-for="certificate in filteredCertificates"
