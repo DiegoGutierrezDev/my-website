@@ -3,13 +3,33 @@
     <h1 class="max-md:text-3xl max-md:text-center text-5xl mb-10 text-center">
       Certificados
     </h1>
-    <h2 class="text-white text-center font-della text-lg mb-10">
+    <h2 class="text-white text-center font-della text-lg mb-8">
       He dedicado gran parte de mi trayectoria a formarme de manera constante y
       exhaustiva. En esta sección podrás encontrar los certificados que
       respaldan mi experiencia profesional y mi compromiso con el aprendizaje
       continuo.
     </h2>
-
+    <div class="flex justify-center mb-4">
+      <div
+        class="relative transition-[max-width] ease-in-out duration-300"
+        :class="isFocused || search ? 'max-w-full' : 'max-w-12'"
+      >
+        <input
+          class="block w-full border-none outline-none rounded-full p-[12px] px-4 placeholder:text-transparent focus:placeholder:text-gray-500 text-black"
+          placeholder="Busca el que quieras!"
+          v-model="search"
+          @focus="isFocused = true"
+          @blur="isFocused = false"
+        />
+        <button
+          class="size-6 text-black self-center absolute top-1/2 right-6 -translate-y-1/2 translate-x-1/2"
+          @click="search = ''"
+          :class="search ? 'cursor-pointer' : 'pointer-events-none'"
+        >
+          <component :is="search ? XMarkIcon : MagnifyingGlassIcon"></component>
+        </button>
+      </div>
+    </div>
     <div
       class="relative flex p-4 rounded-full bg-cyan-700 justify-self-center mb-12 justify-around z-50"
     >
@@ -62,8 +82,8 @@
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between justify-items-center"
     >
       <div
-        v-for="certificate in filteredCertificates"
-        :key="certificate.year"
+        v-for="(certificate, index) in filteredCertificates"
+        :key="index"
         class="rounded-lg mb-8 pa-4 block cursor-pointer transition duration-300"
       >
         <div class="relative">
@@ -92,8 +112,11 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { years, certificates } from '@/constants/data'
+import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 let selectedYear = ref('all')
+let isFocused = ref(true)
+let search = ref('')
 
 // Methods
 function orderCertificates(year) {
@@ -101,10 +124,13 @@ function orderCertificates(year) {
 }
 
 const filteredCertificates = computed(() => {
-  return selectedYear.value === 'all'
-    ? certificates
-    : certificates.filter(
-        certificate => certificate.year === selectedYear.value,
-      )
+  const regex = new RegExp(search.value, 'i')
+  return certificates
+    .filter(certificate => regex.test(certificate.title))
+    .filter(filteredCertificates =>
+      selectedYear.value != 'all'
+        ? filteredCertificates.year === selectedYear.value
+        : filteredCertificates,
+    )
 })
 </script>

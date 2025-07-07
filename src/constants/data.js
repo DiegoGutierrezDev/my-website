@@ -181,7 +181,7 @@ export const certificates = [
     year: '2023',
     src: 'src/assets/titles/Vue&Laravel MasterMind.png',
     description:
-      'Este curso lo realicé para reforzar mis conocimientos en Laravel y como se combina con Vue antes de entrar a Evolbe',
+      'Este curso lo realicé para reforzar mis conocimientos en Laravel y como se integra con Vue antes de entrar a Evolbe',
   },
   {
     title: 'Desarrollo con Vue.js',
