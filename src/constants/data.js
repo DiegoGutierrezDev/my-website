@@ -113,80 +113,80 @@ export const certificates = [
   {
     title: 'Javascript',
     year: '2018',
-    src: 'src/assets/titles/JavaScript.png',
+    src: '/titles/Javascript.png',
     description:
       'El primer curso que realicé y que me lanzó a seguir avanzando!',
   },
   {
     title: 'Desarrollo Web I',
     year: '2019',
-    src: 'src/assets/titles/WebDev1.png',
+    src: '/titles/WebDev1.png',
     description:
       'Probé la programación en diversos ámbitos para asegurarme de que era mi vocación.',
   },
   {
     title: 'Desarrollo de Apps Moviles',
     year: '2019',
-    src: 'src/assets/titles/AppsMoviles.png',
+    src: '/titles/AppsMoviles.png',
     description:
       'Curso oficial de Google sobre monetización de apps con AdMob y gestión eficaz de ingresos en plataformas móviles.',
   },
   {
     title: 'Básicos de Android',
     year: '2020',
-    src: 'src/assets/titles/BasicsAndroid.png',
+    src: '/titles/BasicsAndroid.png',
     description: 'Aprendí los fundamentos del desarrollo Android.',
   },
   {
     title: 'How To Code',
     year: '2020',
-    src: 'src/assets/titles/HowtoCode.png',
+    src: '/titles/HowToCode.png',
     description: 'Para asentar los conocimientos básicos de programación.',
   },
   {
     title: 'Javascript Asíncrono',
     year: '2020',
-    src: 'src/assets/titles/JavaScriptAsincrono.png',
+    src: '/titles/JavascriptAsincrono.png',
     description:
       'Aprendí los básicos de la programación asíncrona y como se aplica en Javascript.',
   },
   {
     title: 'HTML y CSS',
     year: '2022',
-    src: 'src/assets/titles/HTMLCss.png',
+    src: '/titles/HTMLCss.png',
     description: 'Para asentar conocimientos de HTML y CSS',
   },
   {
     title: 'Laravel desde cero',
     year: '2023',
-    src: 'src/assets/titles/Laravel_MasterMind.png',
+    src: '/titles/Laravel_MasterMind.png',
     description:
       'Este curso lo realicé para reforzar mis conocimientos en Laravel antes de entrar a Evolbe',
   },
   {
     title: 'Python básico',
     year: '2023',
-    src: 'src/assets/titles/Python MasterMind.png',
+    src: '/titles/Python MasterMind.png',
     description: 'Curso para seguir aprendiendo otros lenguajes!',
   },
   {
     title: 'Symfony 6 basic',
     year: '2023',
-    src: 'src/assets/titles/Symfony-6-Basic.png',
+    src: '/titles/Symfony-6-Basic.png',
     description:
       'Este curso lo realicé para comprobar las diferencias entre Laravel y Symfony',
   },
   {
     title: 'Desarrollo con Vue.js y Laravel',
     year: '2023',
-    src: 'src/assets/titles/Vue&Laravel MasterMind.png',
+    src: '/titles/Vue&Laravel MasterMind.png',
     description:
       'Este curso lo realicé para reforzar mis conocimientos en Laravel y como se integra con Vue antes de entrar a Evolbe',
   },
   {
     title: 'Desarrollo con Vue.js',
     year: '2023',
-    src: 'src/assets/titles/Vue.jsMasterMind.png',
+    src: '/titles/Vue.jsMasterMind.png',
     description:
       'Este curso lo realicé para reforzar mis conocimientos en Vue.js antes de entrar a Evolbe',
   },
