@@ -12,7 +12,7 @@
       </div>
 
       <div
-        class="w-96 flex max-sm:p-4 justify-around items-center font-hind text-white"
+        class="w-80 md:w-96 flex max-sm:p-4 justify-around items-center text-center font-hind text-white"
       >
         <router-link :to="{ path: '/', hash: '#carreer' }"
           >Mi Carrera</router-link

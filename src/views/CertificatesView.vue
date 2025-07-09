@@ -84,7 +84,7 @@
       <div
         v-for="(certificate, index) in filteredCertificates"
         :key="index"
-        class="rounded-lg mb-8 pa-4 block cursor-pointer transition duration-300"
+        class="rounded-lg object-cover mb-8 pa-4 block cursor-pointer transition duration-300"
       >
         <div class="relative">
           <img :src="certificate.src" alt="" class="pl-1 pr-0.5" />
@@ -92,14 +92,14 @@
             class="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-evenly flex-col opacity-0 hover:opacity-100 transition duration-300"
           >
             <div class="flex flex-col text-center">
-              <p class="text-main-blue text-2xl font-semibold">
+              <p class="text-main-blue md:text-2xl font-semibold">
                 {{ certificate.title }}
               </p>
-              <p class="text-white text-lg font-semibold">
+              <p class="text-white md:text-lg font-semibold">
                 {{ certificate.year }}
               </p>
             </div>
-            <span class="text-white text-lg font-semibold text-center px-8">
+            <span class="text-white md:text-lg font-semibold text-center px-8">
               {{ certificate.description }}
             </span>
           </div>
