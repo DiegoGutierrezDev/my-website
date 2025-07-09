@@ -10,7 +10,7 @@ export default {
       colors: {
         'main-blue': '#66fcf1',
         'darker-blue': '#397977',
-        'dark': '#1b222c',
+        dark: '#1b222c',
         'grey-dark': '#202833',
         'grey-dark-2': '#252e3b',
         'grey-blue': '#243443',
