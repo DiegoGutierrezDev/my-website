@@ -9,23 +9,22 @@ const router = createRouter({
       component: AppLayout,
       children: [
         {
-        path: '/',
-        name: '',
-        component: () => import('../views/MainView.vue')
+          path: '/',
+          name: '',
+          component: () => import('../views/MainView.vue'),
         },
         {
-        path: '/about',
-        name: 'about',
-        component: () => import('../views/AboutView.vue')
+          path: '/about',
+          name: 'about',
+          component: () => import('../views/AboutView.vue'),
         },
         {
           path: '/certificates',
           name: 'certificates',
-          component: () => import('../views/CertificatesView.vue')
-        }
-      ]
+          component: () => import('../views/CertificatesView.vue'),
+        },
+      ],
     },
-    
   ],
   scrollBehavior(to) {
     if (to.hash) {
@@ -34,7 +33,7 @@ const router = createRouter({
         behavior: 'smooth',
       }
     }
-  }
+  },
 })
 
 export default router

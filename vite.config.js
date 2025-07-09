@@ -14,13 +14,11 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
   base: '/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })

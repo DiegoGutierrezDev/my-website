@@ -1,9 +1,10 @@
-# 
+#
+
 # 💡 Hola! :D
 
 Soy Diego Gutiérrez, desarrollador FullStack y este es mi portafolio personal.
 
-¿Quieres saber más sobre mi? 
+¿Quieres saber más sobre mi?
 
 Ser programador ha sido mi proyecto desde hace varios años, asi que hay mucho que contar y poco espacio en el CV, asi que si quieres tener más detalles, has llegado al sitio adecuado!
 
@@ -13,8 +14,8 @@ Ser programador ha sido mi proyecto desde hace varios años, asi que hay mucho q
 
 [DiegoGutierrezDev.com](https://diegogutierrezdev.netlify.app/)
 
-
 ## 🏆 Desarrollado en
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
@@ -25,19 +26,16 @@ Ser programador ha sido mi proyecto desde hace varios años, asi que hay mucho q
 
 Este es un proyecto en marcha, asi que sigo trabajando en más funcionalidades, diseños, mejores prácticas, animaciones, y mucho más!
 
-
 ## 🍻 Quiero tu feedback!
 
 ¿Tienes alguna sugerencia?
 ¿Quieres saber aún más sobre mi?
 Contáctame!
 
-
 ## ☕ Contacto
 
 📬 Gutierrezmaria.diego@gmail.com
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diegoguti%C3%A9rrezdev/)
-
 
 ![](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)

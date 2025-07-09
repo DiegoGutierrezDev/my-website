@@ -3,27 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat.ttf");
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf');
 }
 @font-face {
-  font-family: "Proza";
-  src: url("../fonts/ProzaLibre-Regular.ttf");
+  font-family: 'Proza';
+  src: url('../fonts/ProzaLibre-Regular.ttf');
 }
 @font-face {
-  font-family: "Della";
-  src: url("../fonts/DellaRespira-Regular.ttf");
+  font-family: 'Della';
+  src: url('../fonts/DellaRespira-Regular.ttf');
 }
 @font-face {
-  font-family: "Hind";
-  src: url("../fonts/HindMysuru-Regular.ttf");
+  font-family: 'Hind';
+  src: url('../fonts/HindMysuru-Regular.ttf');
 }
-
 
 html {
-  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);;
+  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
 }
-
 
 img {
   max-width: 100%;
@@ -35,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: theme('colors.darker-blue');
+  color: theme('colors.main-blue');
   transform: translateY(-4px);
   transition: 0.2s;
   transition-timing-function: ease-in-out;
@@ -45,12 +43,12 @@ nav {
   background-color: var(--main);
   border-radius: 20px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   height: 3em;
 }
 
-h1{
+h1 {
   color: white;
   font-family: theme('fontFamily.montserrat');
   font-size: 1.5em;
@@ -64,10 +62,10 @@ h1{
 h2 {
   color: theme('colors.main-blue');
   font-family: theme('fontFamily.della');
-  font-size: 1.50em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
-b{
+b {
   color: var(--light-green);
 }
